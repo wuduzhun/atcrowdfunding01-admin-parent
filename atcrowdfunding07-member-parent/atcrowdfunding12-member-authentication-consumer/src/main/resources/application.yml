@@ -1,0 +1,25 @@
+server:
+  port: 4000
+spring:
+  application:
+    name: atguigu-crowd-auth
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+  redis:
+    host: 192.168.188.129
+  session:
+    store-type: redis
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+short:
+  message:
+    accessKeyId: LTAI4FbdkzqkqtfnsoogQwtg
+    accessSecret: IDA7vtahelcK53U75sDTH0iG5VVzzG
+    templateCode: SMS_176537839
+    signName: 威少准
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
